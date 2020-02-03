@@ -1,48 +1,21 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
-namespace TanksMP
+namespace RhinoGame
 {
-	public class Player : MonoBehaviour
+	public class Player : Unit
 	{       
-		/// <summary>
-		/// Delay between shots.
-		/// </summary>
-		public float fireRate = 0.75f;
-
 		/// <summary>
 		/// Movement speed in all directions.
 		/// </summary>
 		public float moveSpeed = 8f;
-
-		/// <summary>
-		/// Clip to play when a shot has been fired.
-		/// </summary>
-		public AudioClip shotClip;
-        
-		/// <summary>
-		/// Object to spawn on shooting.
-		/// </summary>
-		public GameObject shotFX;
-        
-		/// <summary>
-		/// Position to spawn new bullets at.
-		/// </summary>
-		public Transform shotPos;
-      
-		/// <summary>
-		/// Bullet object for shooting.
-		/// </summary>
-		public GameObject bullet;
         
 		/// <summary>
 		/// Reference to the camera following component.
 		/// </summary>
 		[HideInInspector]
 		public FollowTarget camFollow;
-
-		//timestamp when next shot should happen
-		private float nextFire;
 
 		private Rigidbody rb;
 
@@ -84,20 +57,10 @@ namespace TanksMP
 			}
 		}
 
-		private void Shoot(Vector2 direction = default(Vector2))
+		public override void UnitDied()
 		{
-			if(Time.time > nextFire)
-			{
-				nextFire = Time.time + fireRate;
-
-				GameObject obj = PoolManager.Spawn(bullet, shotPos.position, transform.rotation);
-				Bullet blt = obj.GetComponent<Bullet>();
-
-				if (shotFX)
-					PoolManager.Spawn(shotFX, shotPos.position, Quaternion.identity);
-				if (shotClip)
-					AudioManager.Play3D(shotClip, shotPos.position, 0.1f);
-			}
+			base.UnitDied();
+			LevelManager.Instance.GameOverCanvas.ShowGameOver("You lost!");
 		}
 
 		void Move(Vector2 direction = default(Vector2))

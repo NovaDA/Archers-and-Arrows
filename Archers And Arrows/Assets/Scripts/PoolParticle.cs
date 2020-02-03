@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TanksMP
+namespace RhinoGame
 {
 	/// <summary>
 	/// When attached to an gameobject containing ParticleSystems,

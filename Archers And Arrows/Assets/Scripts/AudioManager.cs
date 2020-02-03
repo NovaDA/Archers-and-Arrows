@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace TanksMP
+namespace RhinoGame
 {
 	/// <summary>
 	/// Handles playback of background music, 2D and 3D one-shot clips during the game.

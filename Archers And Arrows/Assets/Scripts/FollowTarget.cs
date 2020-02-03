@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace TanksMP
+namespace RhinoGame
 {
 	/// <summary>
 	/// Camera script for following the player or a different target transform.

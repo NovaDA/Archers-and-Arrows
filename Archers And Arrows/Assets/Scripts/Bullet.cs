@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace TanksMP
+namespace RhinoGame
 {
 	/// <summary>
 	/// Projectile script for player shots with collision/hit logic.
@@ -49,7 +49,7 @@ namespace TanksMP
 			myRigidbody.velocity = speed * transform.forward;
 		}
 
-		private void OnTriggerEnter(Collider other)
+		private void OnCollisionEnter(Collision collision)
 		{
 			PoolManager.Despawn(gameObject);
 		}
