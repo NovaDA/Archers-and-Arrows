@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910582ddbbea16e428da0ea9e9785cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: MultiPlayer
+  SceneName: MultiplayerLobby
 --- !u!114 &1402569877
 MonoBehaviour:
   m_ObjectHideFlags: 0
