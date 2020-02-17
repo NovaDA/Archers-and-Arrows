@@ -44,6 +44,7 @@ namespace RhinoGame
         private Dictionary<int, GameObject> playerListEntries;
 
         #region UNITY
+
         public void Awake()
         {
             PhotonNetwork.AutomaticallySyncScene = true;
