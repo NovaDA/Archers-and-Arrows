@@ -169,7 +169,8 @@ namespace RhinoGame
         {
             if (PhotonNetwork.LocalPlayer.ActorNumber == newMasterClient.ActorNumber)
             {
-                StartGameButton.gameObject.SetActive(CheckPlayersReady());
+                StartGameButton.gameObject.SetActive(CheckPlayersReady());     // set buttom start game active changed it to set it active only if there are enough players
+
             }
         }
 

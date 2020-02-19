@@ -46,9 +46,9 @@ namespace RhinoGame
             }
         }
 
-        private void StartGame()
+        private void StartGame()   
         {
-            PhotonNetwork.Instantiate("Rhino", Vector3.zero, Quaternion.identity, 0);
+            PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity, 0);
         }
 
         public override void OnPlayerPropertiesUpdate(Photon.Realtime.Player targetPlayer, Hashtable changedProps)

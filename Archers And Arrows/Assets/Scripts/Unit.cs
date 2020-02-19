@@ -10,7 +10,7 @@ public class Unit : MonoBehaviour
 	/// <summary>
 	/// Unit's health
 	/// </summary>
-	[HideInInspector]
+	//[HideInInspector]
 	public int Health = 100;
 
 	/// <summary>

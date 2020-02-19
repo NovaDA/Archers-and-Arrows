@@ -5,7 +5,7 @@ namespace RhinoGame
 {
     public class PlayerController : MonoBehaviour
     {
-        public int Health = 100;
+        public float Health = 100;
         public float RotationSpeed = 8.0f;
         public float MovementSpeed = 10f;
 
@@ -36,6 +36,11 @@ namespace RhinoGame
                 camFollow = Camera.main.GetComponent<FollowTarget>();
                 camFollow.target = transform;
             }
+        }
+
+        public void Damage(float damage)
+        {
+            Health -= damage;
         }
 
         public void Update()
