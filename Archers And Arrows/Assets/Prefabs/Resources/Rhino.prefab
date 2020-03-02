@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1735664756071339009
 Transform:
   m_ObjectHideFlags: 0
@@ -9664,6 +9664,7 @@ MonoBehaviour:
   camFollow: {fileID: 0}
   controllable: 1
   ShootingPos: {fileID: 8543322186654483869}
+  playername: {fileID: 0}
 --- !u!114 &6691564273481057747
 MonoBehaviour:
   m_ObjectHideFlags: 0

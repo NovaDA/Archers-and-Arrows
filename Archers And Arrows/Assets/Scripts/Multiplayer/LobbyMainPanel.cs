@@ -167,7 +167,7 @@ namespace RhinoGame
 
         public override void OnMasterClientSwitched(Photon.Realtime.Player newMasterClient)
         {
-            if (PhotonNetwork.LocalPlayer.ActorNumber == newMasterClient.ActorNumber)
+            if (PhotonNetwork.LocalPlayer.ActorNumber == newMasterClient.ActorNumber )
             {
                 StartGameButton.gameObject.SetActive(CheckPlayersReady());     // set buttom start game active changed it to set it active only if there are enough players
 
@@ -276,8 +276,14 @@ namespace RhinoGame
                 return false;
             }
 
+            if( PhotonNetwork.PlayerList.Length <= 1)
+            {
+                return false;
+            }
+
             foreach (Photon.Realtime.Player p in PhotonNetwork.PlayerList)
             {
+                
                 object isPlayerReady;
                 if (p.CustomProperties.TryGetValue(AsteroidsGame.PLAYER_READY, out isPlayerReady))
                 {
@@ -307,7 +313,11 @@ namespace RhinoGame
 
         public void LocalPlayerPropertiesUpdated()
         {
-            StartGameButton.gameObject.SetActive(CheckPlayersReady());
+            if (PhotonNetwork.PlayerList.Length <= 0)
+            {
+                StartGameButton.gameObject.SetActive(CheckPlayersReady());
+            }
+            
         }
 
         private void SetActivePanel(string activePanel)

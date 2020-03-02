@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -53.033997
@@ -212,6 +216,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -343,7 +351,7 @@ PrefabInstance:
         type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 758186132}
+      objectReference: {fileID: 8543322186815803970}
     - target: {fileID: 114820703319858582, guid: 0d8daac695b951847b2f8e027919314a,
         type: 3}
       propertyPath: distance
@@ -365,7 +373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 108748424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Trees
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,6 +415,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -524,7 +536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverCanvas: {fileID: 1171761846}
   Enemies: {fileID: 1628259769}
-  Player: {fileID: 758186133}
+  Player: {fileID: 8543322186815803983}
   EnemiesCount: 0
   LimitTime: 1
   TotalTimeToComplete: 120
@@ -544,6 +556,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -627,6 +643,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 33.219482
@@ -709,6 +729,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8da72e9a2ba2b0d4aa84f50b8f19b35f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8da72e9a2ba2b0d4aa84f50b8f19b35f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -455.98285
@@ -785,7 +809,7 @@ GameObject:
   - component: {fileID: 306175276}
   - component: {fileID: 306175275}
   - component: {fileID: 306175274}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -876,6 +900,10 @@ PrefabInstance:
     - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_Name
       value: Rock_2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4646933745565138, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1001,6 +1029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -46.98
@@ -1059,12 +1091,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
---- !u!4 &361420857 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8543322186654483869, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-    type: 3}
-  m_PrefabInstance: {fileID: 758186131}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &389206623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1075,6 +1101,10 @@ PrefabInstance:
     - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_Name
       value: Bush_3 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1144,6 +1174,10 @@ PrefabInstance:
     - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_Name
       value: Rock_2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4646933745565138, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1426,6 +1460,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox
       objectReference: {fileID: 0}
+    - target: {fileID: 3406802203534618251, guid: 14f7a4912efdd7846b26c70a43efb6d8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1809388586485947544, guid: 14f7a4912efdd7846b26c70a43efb6d8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1491,6 +1530,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1582344635456532473, guid: 14f7a4912efdd7846b26c70a43efb6d8,
+        type: 3}
+      propertyPath: m_Radius
+      value: 6.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 6499326783722510827, guid: 14f7a4912efdd7846b26c70a43efb6d8,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14f7a4912efdd7846b26c70a43efb6d8, type: 3}
 --- !u!4 &471105721 stripped
@@ -1509,6 +1558,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1590,7 +1643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 544047467}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1628,6 +1681,10 @@ PrefabInstance:
     - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_Name
       value: Rock_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4646933745565138, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1691,6 +1748,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
       propertyPath: m_Name
       value: Block 6x5x6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1774,6 +1835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.219482
@@ -1854,7 +1919,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 616676781}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1892,6 +1957,10 @@ PrefabInstance:
     - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_Name
       value: Bush_3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1967,6 +2036,10 @@ PrefabInstance:
     - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_Name
       value: Rock_2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978445070297066, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4646933745565138, guid: 4983f395b2610de4e9f688a87bbd9af9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2219,6 +2292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 45.219482
@@ -2290,106 +2367,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.000001, y: 12.000006, z: 2.0000443}
   m_Center: {x: 0.000008106232, y: 5.999999, z: -0.0000217557}
---- !u!1001 &758186131
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 8543322186498151133, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151133, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.542
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 566026438, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 566026438, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc, type: 3}
---- !u!4 &758186132 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8543322186498151121, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-    type: 3}
-  m_PrefabInstance: {fileID: 758186131}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &758186133 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8543322186498151132, guid: 05cc76de9be8ea04a9e9f0a0554ccbfc,
-    type: 3}
-  m_PrefabInstance: {fileID: 758186131}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0a5fa8dc87825e4f87e00cac1db08b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &776739102 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d,
@@ -2500,7 +2477,7 @@ MonoBehaviour:
   shotFX: {fileID: 1000011513120438, guid: f70d27f5cf28c8941bbfd6febd74797f, type: 3}
   fireRate: 0.75
   bullet: {fileID: 1000010310479910, guid: 7a60c077f705e2742ac4de552f20f623, type: 3}
-  shotPos: {fileID: 361420857}
+  shotPos: {fileID: 8543322186036806926}
   moveSpeed: 8
   camFollow: {fileID: 0}
 --- !u!65 &781048073
@@ -2542,6 +2519,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 8da72e9a2ba2b0d4aa84f50b8f19b35f, type: 3}
       propertyPath: m_Name
       value: Stone_1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8da72e9a2ba2b0d4aa84f50b8f19b35f, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8da72e9a2ba2b0d4aa84f50b8f19b35f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2651,6 +2632,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 81.21948
@@ -2732,6 +2717,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2849,7 +2838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 968594014}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: walls (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2887,6 +2876,10 @@ PrefabInstance:
     - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_Name
       value: Bush_3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2956,6 +2949,10 @@ PrefabInstance:
     - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_Name
       value: Bush_3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3032,6 +3029,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -47.69
@@ -3105,7 +3106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 986004133}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: walls (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3181,6 +3182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.81
@@ -3249,6 +3254,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3331,6 +3340,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3687,6 +3700,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 93.21948
@@ -3768,6 +3785,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3851,6 +3872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.27
@@ -3925,6 +3950,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4008,6 +4037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 81.21948
@@ -4090,6 +4123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 6x5x6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -29.034286
@@ -4171,6 +4208,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4446,6 +4487,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 69.21948
@@ -4534,6 +4579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.1
@@ -4601,7 +4650,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606111672}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4639,6 +4688,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4755,6 +4808,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.033997
@@ -4837,6 +4894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_3
       objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.16
@@ -4912,6 +4973,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bush_3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1309910605144772, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4951361981142268, guid: 27ce25370e5628e4097b7cb95b3a151d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.11
@@ -4986,6 +5051,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5068,6 +5137,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
       propertyPath: m_Name
       value: Block 6x5x6 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5242,6 +5315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stone_1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 8da72e9a2ba2b0d4aa84f50b8f19b35f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8da72e9a2ba2b0d4aa84f50b8f19b35f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -443.10284
@@ -5315,7 +5392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1766310033}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5353,6 +5430,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5436,6 +5517,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blocks And Bricks 11 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.219482
@@ -5517,6 +5602,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_Name
       value: Blocks And Bricks 11 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bad93d3467d6edf4cb2e3d2b3d272e26, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5600,6 +5689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block 6x5x6 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7f81bf7237b48db498a73849d70b9bb3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 57.21948
@@ -5671,3 +5764,116 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 12.000003, y: 12.000033, z: 10.000049}
   m_Center: {x: 0.000014543533, y: 5.9999976, z: -0.000027418142}
+--- !u!1001 &1038460688382118225
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8711826716519553823, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038460688188877060, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038460688188877060, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923914185120641953, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7923914185120641953, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 987ca3a1d4f706d41994fc8dbb2ff510, type: 3}
+--- !u!4 &8543322186036806926 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8711826717213805663, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+    type: 3}
+  m_PrefabInstance: {fileID: 1038460688382118225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8543322186815803970 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8711826716519553811, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+    type: 3}
+  m_PrefabInstance: {fileID: 1038460688382118225}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8543322186815803983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8711826716519553822, guid: 987ca3a1d4f706d41994fc8dbb2ff510,
+    type: 3}
+  m_PrefabInstance: {fileID: 1038460688382118225}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a5fa8dc87825e4f87e00cac1db08b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameOverCanvas: {fileID: 1171761846}
   Enemies: {fileID: 1628259769}
-  Player: {fileID: 8543322186815803983}
+  Player: {fileID: 0}
   EnemiesCount: 0
   LimitTime: 1
   TotalTimeToComplete: 120
@@ -4519,6 +4519,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1023220064477602421, guid: 190a6ded9fbb43b408186f7825656606,
+        type: 3}
+      propertyPath: viewIdField
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 788207575918369197, guid: 190a6ded9fbb43b408186f7825656606,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -4643,15 +4648,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 788207575843682808}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8543322186815803983 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8971096646657092535, guid: 190a6ded9fbb43b408186f7825656606,
-    type: 3}
-  m_PrefabInstance: {fileID: 788207575843682808}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0a5fa8dc87825e4f87e00cac1db08b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

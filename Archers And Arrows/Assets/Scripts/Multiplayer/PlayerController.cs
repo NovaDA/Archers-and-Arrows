@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using Photon.Pun;
+using UnityEngine.UI;
+using Photon.Pun.Demo.Asteroids;
 
 namespace RhinoGame
 {
@@ -12,6 +14,8 @@ namespace RhinoGame
         /// <summary>
         /// Delay between shots.
         /// </summary>
+        /// 
+        
         public float FireRate = 0.75f;
         public GameObject BulletPrefab;
         [HideInInspector]
@@ -25,6 +29,10 @@ namespace RhinoGame
         //timestamp when next shot should happen
         private float nextFire;
 
+        
+        public Text playername;
+        
+
         public void Awake()
         {
             photonView = GetComponent<PhotonView>();
@@ -35,10 +43,16 @@ namespace RhinoGame
             {
                 camFollow = Camera.main.GetComponent<FollowTarget>();
                 camFollow.target = transform;
+                
             }
+
+            SetPlayerUI();
+
+
         }
 
-        public void Damage(float damage)
+        [PunRPC]
+        public void Damage(int damage)
         {
             Health -= damage;
         }
@@ -56,12 +70,14 @@ namespace RhinoGame
             {
                 moveDir.x = 0;
                 moveDir.y = 0;
+                GetComponent<PlayerCollision>().Trail.SetActive(false);
             }
             else
             {
                 moveDir.x = Input.GetAxis("Horizontal");
                 moveDir.y = Input.GetAxis("Vertical");
                 Move(moveDir);
+                GetComponent<PlayerCollision>().Trail.SetActive(true);
             }
 
             if (Input.GetKey(KeyCode.Space))
@@ -96,6 +112,17 @@ namespace RhinoGame
 
             Vector3 movementDir = transform.forward * MovementSpeed * Time.deltaTime;
             rigidbody.MovePosition(rigidbody.position + movementDir);
+            
+        }
+
+
+        private void SetPlayerUI()
+        {
+            if(playername != null)
+            {
+                playername.text = photonView.Owner.NickName;
+                playername.color = AsteroidsGame.GetColor(photonView.Owner.ActorNumber - 1);    // Actor Numbers Starts Always From 1
+            }    
         }
 
 
@@ -112,6 +139,8 @@ namespace RhinoGame
 
             }
         }
+
+
 
     }
 }

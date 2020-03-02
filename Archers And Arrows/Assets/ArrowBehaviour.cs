@@ -22,11 +22,9 @@ public class ArrowBehaviour : MonoBehaviour
 
 
     Rigidbody rb;
-
-
-
     public Photon.Realtime.Player Owner { get; private set; }
     private Renderer renderer;
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -83,37 +81,75 @@ public class ArrowBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius, enemies);
+        #region NOT USED
+        //Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius, enemies);
 
-        for (int i = 0; i < colliders.Length; i++)
-        {
-            Rigidbody target = colliders[i].GetComponent<Rigidbody>();
+        //for (int i = 0; i < colliders.Length; i++)
+        //{
+        //    Rigidbody target = colliders[i].GetComponent<Rigidbody>();
 
-            if (!target)
-                continue;
+        //    if (!target)
+        //        continue;
 
-            target.AddExplosionForce(explosionForce, transform.position, explosionRadius);
+        //    target.AddExplosionForce(explosionForce, transform.position, explosionRadius); // v
 
-            var playerController = collision.gameObject.GetComponent<PlayerController>();
+        //    var playerController = collision.gameObject.GetComponent<PlayerController>();
 
-            if (!playerController)
-                continue;
+        //    if (!playerController)
+        //        continue;
 
-            float damage = CalculateDamage(target.position);
-            playerController.Damage(damage);
-            if(playerController.Health <= 0)
-            {
-                collision.gameObject.GetComponent<PhotonView>().RPC("DestroyPlayer", RpcTarget.All);
-                Owner.AddScore(1);
-            }
-        }
+        //    float damage = CalculateDamage(target.position);
+        //    Debug.Log(damage);
+
+        //    // playerController.Damage(damage);
+        //    playerController.Damage((int)damage);
+        //    if (playerController.Health <= 0)
+        //    {
+        //        collision.gameObject.GetComponent<PhotonView>().RPC("DestroyPlayer", RpcTarget.All);
+        //        Owner.AddScore(1);
+        //    }
+        //}
+        #endregion
 
         explosion_particles.transform.parent = null;
         PoolManager.Spawn(explosion_particles, transform.position, transform.rotation);
         AudioManager.Play3D(explosionAudio, transform.position);
-
+        CheckForObjectCollision();
         /// Destroy(explosion_particles.gameObject, explosion_particles.main.duration);
         Destroy(gameObject);
+    }
+
+    private void CheckForObjectCollision()
+    {
+        Collider[] colliders = Physics.OverlapSphere(transform.position, explosionRadius);
+        for (int i = 0; i < colliders.Length; i++)
+        {
+            if (colliders[i].gameObject.name == "Damage")
+            {
+                Rigidbody target = colliders[i].GetComponentInParent<Rigidbody>();
+
+                if (!target)
+                    continue;
+
+                target.AddExplosionForce(explosionForce, transform.position, explosionRadius); // v
+
+                var Enemy = target.GetComponent<PlayerController>();
+
+                if (!Enemy)
+                    continue;
+
+                float damage = CalculateDamage(target.position);
+                Debug.Log(damage);
+                target.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, (int)damage);
+                Enemy.Damage((int)damage);
+
+                if (Enemy.Health <= 0)
+                {
+                    target.gameObject.GetComponent<PhotonView>().RPC("DestroyPlayer", RpcTarget.All);
+                    Owner.AddScore(1);
+                }
+            }
+        }
     }
 
     public void InitializeArrow(Photon.Realtime.Player owner, Vector3 originalDirection, float lag, float charge)

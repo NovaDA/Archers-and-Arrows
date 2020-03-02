@@ -43,3 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9194e74493075194191c6322af3db556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawningPos:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  MaxScore: 5
+  InfoText: {fileID: 0}
