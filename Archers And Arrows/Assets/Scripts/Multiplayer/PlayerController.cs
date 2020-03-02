@@ -29,7 +29,6 @@ namespace RhinoGame
         //timestamp when next shot should happen
         private float nextFire;
 
-        
         public Text playername;
         
 
@@ -47,12 +46,11 @@ namespace RhinoGame
             }
 
             SetPlayerUI();
-
-
         }
 
+
         [PunRPC]
-        public void Damage(int damage)
+        public void Damage(float damage)
         {
             Health -= damage;
         }
@@ -70,19 +68,20 @@ namespace RhinoGame
             {
                 moveDir.x = 0;
                 moveDir.y = 0;
-                GetComponent<PlayerCollision>().Trail.SetActive(false);
+                GetComponent<PhotonView>().RPC("ActivateTrail", RpcTarget.AllViaServer, false);
             }
             else
             {
                 moveDir.x = Input.GetAxis("Horizontal");
                 moveDir.y = Input.GetAxis("Vertical");
                 Move(moveDir);
-                GetComponent<PlayerCollision>().Trail.SetActive(true);
+                GetComponent<PhotonView>().RPC("ActivateTrail", RpcTarget.AllViaServer, true);
             }
 
             if (Input.GetKey(KeyCode.Space))
             {
                 photonView.RPC("Fire", RpcTarget.AllViaServer, transform.rotation);
+                
             }
         }
 

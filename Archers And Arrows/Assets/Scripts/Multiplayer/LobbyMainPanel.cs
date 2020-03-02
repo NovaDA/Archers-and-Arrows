@@ -276,7 +276,7 @@ namespace RhinoGame
                 return false;
             }
 
-            if( PhotonNetwork.PlayerList.Length <= 1)
+            if( PhotonNetwork.PlayerList.Length < 1)  // add =
             {
                 return false;
             }
