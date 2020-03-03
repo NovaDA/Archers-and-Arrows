@@ -5,6 +5,7 @@ using UnityEngine;
 using RhinoGame;
 using Photon.Pun;
 using Photon.Pun.UtilityScripts;
+using Photon.Pun.Demo.Asteroids;
 
 public class ArrowBehaviour : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class ArrowBehaviour : MonoBehaviour
     public float explosionForce = 1000f;
     public float maxLifeTime = 2f;
     public float explosionRadius = 5f;
+    private Light light;
     #endregion
 
 
@@ -31,11 +33,17 @@ public class ArrowBehaviour : MonoBehaviour
         photonView = GetComponent<PhotonView>();
         rb = GetComponent<Rigidbody>();
         renderer = GetComponent<Renderer>();
+        light = GetComponent<Light>();
+
+        
+
     }
 
 
     private void Start()
     {
+        light.color = AsteroidsGame.GetColor(Owner.ActorNumber - 1);
+        
         Destroy(gameObject, maxLifeTime);
     }
 
@@ -115,8 +123,8 @@ public class ArrowBehaviour : MonoBehaviour
         PoolManager.Spawn(explosion_particles, transform.position, transform.rotation);
         AudioManager.Play3D(explosionAudio, transform.position);
         CheckForObjectCollision();
-        /// Destroy(explosion_particles.gameObject, explosion_particles.main.duration);
         Destroy(gameObject);
+        /// Destroy(explosion_particles.gameObject, explosion_particles.main.duration);
     }
 
     private void CheckForObjectCollision()
@@ -140,8 +148,8 @@ public class ArrowBehaviour : MonoBehaviour
 
                 float damage = CalculateDamage(target.position);
                 Debug.Log(damage);
-                target.gameObject.GetComponent<PhotonView>().RPC("TakeDamage", RpcTarget.AllBuffered, (int)damage);
-                Enemy.Damage((int)damage);
+                
+                target.gameObject.GetComponent<PhotonView>().RPC("Damage", RpcTarget.AllBuffered, damage);
 
                 if (Enemy.Health <= 0)
                 {

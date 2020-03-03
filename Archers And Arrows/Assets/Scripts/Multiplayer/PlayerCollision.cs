@@ -55,11 +55,11 @@ namespace RhinoGame
             playerController.controllable = false;
             HealthBar.gameObject.SetActive(false);
 
-            Trail.SetActive(false);
+            //Trail.SetActive(false);
             Destruction.Play();
 
             StartCoroutine("WaitForRespawn");
-
+            #region NOT USED
             //if (photonView.IsMine)
             //{
             //    object lives;
@@ -73,7 +73,15 @@ namespace RhinoGame
             //        }
             //    }
             //}
+            #endregion
         }
+
+        [PunRPC]
+        public void ActivateTrail(bool activation)
+        {
+            Trail.SetActive(activation);
+        }
+
 
         [PunRPC]
         public void RespawnPlayer()
@@ -86,7 +94,7 @@ namespace RhinoGame
             playerController.Health = 100;
             HealthBar.gameObject.SetActive(true);
 
-            Trail.SetActive(true);
+            //Trail.SetActive(true);
             Destruction.Stop();
         }
 
@@ -100,7 +108,7 @@ namespace RhinoGame
             else
             {
                 // Network player, receive data
-                playerController.Health = (int)stream.ReceiveNext();
+                playerController.Health = (float)stream.ReceiveNext();
             }
         }
 
